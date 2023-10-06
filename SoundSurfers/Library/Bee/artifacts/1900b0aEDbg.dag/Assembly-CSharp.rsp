@@ -388,6 +388,16 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll"
 -analyzer:"C:/Unity/Unity Versions/2022.3.10f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Unity/Unity Versions/2022.3.10f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/Lets Make a VR Game/Oculus Hands/Scripts/AnimateHandOnInput.cs"
+"Assets/Lets Make a VR Game/UI 3D Examples/UI_3D/Scripts/ClawMachine/ClawMachine.cs"
+"Assets/Lets Make a VR Game/UI 3D Examples/UI_3D/Scripts/ClawMachine/FlippyDoor.cs"
+"Assets/Lets Make a VR Game/UI 3D Examples/UI_3D/Scripts/ClawMachine/UfoAbductionForce.cs"
+"Assets/Lets Make a VR Game/UI 3D Examples/UI_3D/Scripts/XRGripButton.cs"
+"Assets/Lets Make a VR Game/UI 3D Examples/UI_3D/Scripts/XRJoystick.cs"
+"Assets/Lets Make a VR Game/UI 3D Examples/UI_3D/Scripts/XRKnob.cs"
+"Assets/Lets Make a VR Game/UI 3D Examples/UI_3D/Scripts/XRLever.cs"
+"Assets/Lets Make a VR Game/UI 3D Examples/UI_3D/Scripts/XRPushButton.cs"
+"Assets/Lets Make a VR Game/UI 3D Examples/UI_3D/Scripts/XRSlider.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
 
