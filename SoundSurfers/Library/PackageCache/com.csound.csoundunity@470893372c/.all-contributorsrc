@@ -1,0 +1,142 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "giovannibedetti",
+      "name": "Giovanni Bedetti",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1912983?v=4",
+      "profile": "http://www.giovannibedetti.com",
+      "contributions": [
+        "code",
+        "bug",
+        "maintenance",
+        "platform",
+        "doc"
+      ]
+    },
+    {
+      "login": "berntisak",
+      "name": "Bernt Isak Wærstad",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/9213871?v=4",
+      "profile": "https://github.com/berntisak",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "ceberman",
+      "name": "Charles Berman",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/33271566?v=4",
+      "profile": "http://bermondo.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "hectorC",
+      "name": "Hector Centeno",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/4064498?v=4",
+      "profile": "http://www.hcenteno.net",
+      "contributions": [
+        "code",
+        "platform"
+      ]
+    },
+    {
+      "login": "NPatch",
+      "name": "NPatch",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6648226?v=4",
+      "profile": "http://npatsiouras.wordpress.com/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "composingcap",
+      "name": "Chris Poovey",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20663797?v=4",
+      "profile": "http://christopherpoovey.com",
+      "contributions": [
+        "doc",
+        "bug"
+      ]
+    },
+    {
+      "login": "nathanjams",
+      "name": "nathanjams",
+      "avatar_url": "https://avatars.githubusercontent.com/u/52339466?v=4",
+      "profile": "https://github.com/nathanjams",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "Despair-Bear",
+      "name": "Despair-Bear",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25762834?v=4",
+      "profile": "https://github.com/Despair-Bear",
+      "contributions": [
+        "code",
+        "bug"
+      ]
+    },
+    {
+      "login": "runette",
+      "name": "Paul",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2239795?v=4",
+      "profile": "https://github.com/runette",
+      "contributions": [
+        "tool"
+      ]
+    },
+    {
+      "login": "patrickjboettcher",
+      "name": "Patrick J. Boettcher",
+      "avatar_url": "https://avatars.githubusercontent.com/u/60217027?v=4",
+      "profile": "http://reptile-sounddesign.com",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "simogreg",
+      "name": "simogreg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57944333?v=4",
+      "profile": "https://github.com/simogreg",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "bellicapax",
+      "name": "Eris Koleszar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3947103?v=4",
+      "profile": "http://eris.codes",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "makeplayhappy",
+      "name": "Makeplayhappy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46995545?v=4",
+      "profile": "https://makeplayhappy.com/",
+      "contributions": [
+        "code",
+        "platform",
+        "bug"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "CsoundUnity",
+  "projectOwner": "rorywalsh",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true,
+  "commitConvention": "angular"
+}
