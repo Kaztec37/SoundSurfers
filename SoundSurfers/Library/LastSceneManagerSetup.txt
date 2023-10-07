@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/D - efault Scene.unity
+- path: Assets/Scenes/FabAudioTestScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -401,6 +401,7 @@
 "Assets/Lets Make a VR Game/UI 3D Examples/UI_3D/Scripts/XRLever.cs"
 "Assets/Lets Make a VR Game/UI 3D Examples/UI_3D/Scripts/XRPushButton.cs"
 "Assets/Lets Make a VR Game/UI 3D Examples/UI_3D/Scripts/XRSlider.cs"
+"Assets/Scripts/SoundInteraction.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
 
