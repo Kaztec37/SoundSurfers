@@ -1324,7 +1324,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1754150566}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &970578604
@@ -3075,14 +3076,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1481501857}
   - component: {fileID: 1481501861}
+  - component: {fileID: 1481501860}
   - component: {fileID: 1481501859}
   - component: {fileID: 1481501858}
   - component: {fileID: 1481501865}
   - component: {fileID: 1481501864}
   - component: {fileID: 1481501863}
   - component: {fileID: 1481501862}
-  - component: {fileID: 1481501867}
-  - component: {fileID: 1481501866}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3102,8 +3102,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1997342278}
+  m_Children: []
   m_Father: {fileID: 1754150566}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1481501858
@@ -3259,6 +3258,14 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+--- !u!81 &1481501860
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481501856}
+  m_Enabled: 1
 --- !u!20 &1481501861
 Camera:
   m_ObjectHideFlags: 0
@@ -3918,26 +3925,6 @@ MonoBehaviour:
   m_OccludeARHitsWith3DObjects: 0
   m_OccludeARHitsWith2DObjects: 0
   m_ScaleMode: 0
---- !u!114 &1481501866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1481501856}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 587890756adb1154fb03255e8a00fd0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!81 &1481501867
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1481501856}
-  m_Enabled: 1
 --- !u!1001 &1563043826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4878,15 +4865,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1754150565}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.8626665, z: 0}
-  m_LocalScale: {x: 1.6666665, y: 1.6666665, z: 1.6666665}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.1176, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1481501857}
   - {fileID: 1572995700}
   - {fileID: 146946916}
-  m_Father: {fileID: 2093042781}
+  m_Father: {fileID: 938893207}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1798033836
 PrefabInstance:
@@ -5555,197 +5542,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1992577437}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1997342277
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1997342278}
-  - component: {fileID: 1997342281}
-  - component: {fileID: 1997342280}
-  - component: {fileID: 1997342279}
-  m_Layer: 0
-  m_Name: csound
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1997342278
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1997342277}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1481501857}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1997342279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1997342277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af287aeb8542f1f4e90778914065967c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  csdFilePath: 
-  tex2D: {fileID: 0}
---- !u!114 &1997342280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1997342277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d20258c641c94f0ea3dc32cfe3de904, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  logCsoundOutput: 0
-  mute: 0
-  processClipAudio: 0
-  loudVolumeWarning: 1
-  loudWarningThreshold: 10
-  csoundScore: 
-  environmentSettings: []
-  _csoundFileGUID: 29577e2fe1f350744be85a0c03faed06
-  _csoundString: "<CsoundSynthesizer>\r\n<CsOptions>\r\n  -d -o dac\r\n</CsOptions>\r\n<CsInstruments>\r\n\r\nsr
-    = 48000\r\nkr = 480\r\nksmps = 100\r\nnchnls = 2\r\n\r\n;Initial volume\r\n0dbfs
-    = 1\r\n\r\ninstr 1\r\n  ; Read RGB values from Unity (replace these with actual
-    values from Unity)\r\n  k_red chnget \"red\"\r\n  k_green chnget \"green\"\r\n 
-    k_blue chnget \"blue\"\r\n\r\n  ; Calculate frequency based on RGB values\r\n 
-    k_frequency = (k_red + k_green + k_blue) * 1000 ; Adjust the scaling factor as
-    needed\r\n\r\n  ; Read brightness from Unity\r\n  k_brightness chnget \"brightness\"\r\n\r\n 
-    ; Calculate volume based on brightness\r\n  k_volume = k_brightness\r\n\r\n 
-    ; Generate sound based on frequency and volume\r\n  a_sound noise k_volume\r\n 
-    out a_sound * k_frequency\r\nendin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n</CsScore>\r\n</CsoundSynthesizer>"
-  _csoundFileName: Csound.csd
-  _csoundAsset: {fileID: 102900000, guid: 29577e2fe1f350744be85a0c03faed06, type: 3}
-  _channels: []
-  _availableAudioChannels: []
-  _drawCsoundString: 0
-  _drawTestScore: 0
-  _drawSettings: 0
-  _drawChannels: 0
-  _drawAudioChannels: 0
-  _drawPresets: 0
-  _drawPresetsLoad: 0
-  _drawPresetsSave: 0
-  _drawPresetsImport: 0
-  _showRuntimeEnvironmentPath: 0
-  _currentPreset: 
-  _currentPresetSaveFolder: 
-  _currentPresetLoadFolder: 
---- !u!82 &1997342281
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1997342277}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1001 &2061368576
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5840,7 +5636,6 @@ Transform:
   m_Children:
   - {fileID: 1433984478}
   - {fileID: 196493777}
-  - {fileID: 1754150566}
   - {fileID: 714879964}
   - {fileID: 1563043827}
   - {fileID: 1270726738}
