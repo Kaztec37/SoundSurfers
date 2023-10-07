@@ -1,61 +1,54 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class GetQuadTexturePixelValues : MonoBehaviour
 {
-    public GameObject quad; // Assign your quad in the Inspector
+    //public GameObject quad; // Assign your quad in the Inspector
+    private Camera mainCam;
 
     // Start is called before the first frame update
     void Start()
-    {
-        Renderer renderer = GetComponent<Renderer>();
-
-        // Assuming your camera is at position (0, 0, 0)
-        Vector3 cameraPosition = new Vector3(0, 0, 0);
-
-        Ray ray = new Ray(cameraPosition, transform.forward);
-        RaycastHit hitInfo;
-
-
-        try
-        {
-            if (renderer != null && renderer.material.mainTexture != null)
-            {
-                /* Texture2D texture = (Texture2D)renderer.material.mainTexture;
-
-                 int x = texture.width / 2;
-                 int y = texture.height / 2;
-
-                 Color pixelColor = texture.GetPixel(x, y);
-
-                 Debug.Log("Pixel Color at center: " + pixelColor);*/
-
-                if (Physics.Raycast(ray, out hitInfo))
-                {
-                    renderer = hitInfo.collider.GetComponent<Renderer>();
-                    Vector2 uv = hitInfo.textureCoord;
-                    Color pixelColor = ((Texture2D)renderer.material.mainTexture).GetPixelBilinear(uv.x, uv.y);
-
-                    Debug.Log("Pixel Color at ray hit: " + pixelColor);
-                }
-            }
-            else
-            {
-                Debug.LogError("Renderer component or texture not found.");
-            }
-
-        }
-        catch (Exception e)
-        {
-            Debug.Log("Eoghan exception: " +e);
-        }
+    {  
+        mainCam = Camera.main;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //Cast a Ray every Frame, if it hits a renderer get texture Info + RGB color value and print it to the console
+        if (Physics.Raycast(CastRay(mainCam.transform.position, mainCam.transform.forward), out RaycastHit hitInfo))
+        {
+            if(FindRendererOnThisFrame(hitInfo) != null)
+            {
+                Vector2 uv = hitInfo.textureCoord;
+                Color pixelColor = ((Texture2D)FindRendererOnThisFrame(hitInfo).material.mainTexture).GetPixelBilinear(uv.x, uv.y);
+
+                Debug.Log("Pixel Color at ray hit: " + pixelColor);
+            }
+        }
+        else
+        {
+            Debug.Log("No Raycastinfo, look at the picture");
+        }
+    }
+
+    //Cast a Ray from a given source
+    private Ray CastRay(Vector3 source, Vector3 direction)
+    {
+        Ray ray = new Ray(source,direction);
+        return ray;
+    }
+
+    //if hitInfo valid, see if you can find a Renderer on the RaycastHit
+    private Renderer FindRendererOnThisFrame(RaycastHit hitInfo)
+    {
+        hitInfo.collider.TryGetComponent<Renderer>(out var currentRenderer);
+
+        if (currentRenderer == null) { return null; }
+
+        return currentRenderer;
     }
 }
