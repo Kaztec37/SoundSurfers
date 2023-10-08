@@ -5,7 +5,7 @@ using UnityEngine;
 public class OrionFrameGenerator : MonoBehaviour
 {
     public Material sphereMat; // Reference to the sphere's material
-    public Texture[] frameTextures; // Array of image frames
+    public Texture[] frameTextures = new Texture[1000]; // Array of image frames
     public float fPS = 24f; // Frames per second for the video playback
 
     private int currentFrameIndex = 0;

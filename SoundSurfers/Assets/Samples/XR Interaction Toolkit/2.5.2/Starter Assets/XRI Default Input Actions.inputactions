@@ -9,7 +9,7 @@
                     "name": "Position",
                     "type": "Value",
                     "id": "1a9029f8-7a46-46b9-9eff-e9ae8365f611",
-                    "expectedControlType": "Vector3",
+                    "expectedControlType": "Quaternion",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -1134,9 +1134,9 @@
                 },
                 {
                     "name": "Rotation",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "ee6bf5bf-bb0a-4a50-8327-cb654b19e298",
-                    "expectedControlType": "Quaternion",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -1862,7 +1862,7 @@
                     "name": "",
                     "id": "d6c08c3d-3d41-4695-994d-1ac9016a5a9e",
                     "path": "<XRController>{RightHand}/{Primary2DAxis}",
-                    "interactions": "Sector(directions=12,sweepBehavior=1),Sector(directions=2,sweepBehavior=2)",
+                    "interactions": "Sector(directions=-1,sweepBehavior=1),Sector(directions=2,sweepBehavior=2)",
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Turn",
