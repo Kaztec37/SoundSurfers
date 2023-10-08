@@ -11319,6 +11319,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3987231771468556937, guid: 20a260535c4aad241901530a2cbc12ce,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4662566265979741106, guid: 20a260535c4aad241901530a2cbc12ce,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4662566265979741106, guid: 20a260535c4aad241901530a2cbc12ce,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4662566265979741106, guid: 20a260535c4aad241901530a2cbc12ce,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4970274143609141178, guid: 20a260535c4aad241901530a2cbc12ce,
         type: 3}
       propertyPath: m_Name
@@ -11329,13 +11349,24 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0ac3796506989474d82044b5b4431d2a, type: 2}
+    - target: {fileID: 7530739275240697721, guid: 20a260535c4aad241901530a2cbc12ce,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7530739275240697721, guid: 20a260535c4aad241901530a2cbc12ce,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7644276225010452673, guid: 20a260535c4aad241901530a2cbc12ce,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.011
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2369740894167944419, guid: 20a260535c4aad241901530a2cbc12ce, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2591297488571066665, guid: 20a260535c4aad241901530a2cbc12ce,
