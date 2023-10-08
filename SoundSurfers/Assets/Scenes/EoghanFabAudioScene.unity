@@ -181,6 +181,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3604942954121412238, guid: 20a260535c4aad241901530a2cbc12ce,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4662566265979741106, guid: 20a260535c4aad241901530a2cbc12ce,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -200,6 +205,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: XR Origin (XR Rig)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5769830860522802770, guid: 20a260535c4aad241901530a2cbc12ce,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7530739275240697721, guid: 20a260535c4aad241901530a2cbc12ce,
         type: 3}
