@@ -1134,9 +1134,9 @@
                 },
                 {
                     "name": "Rotation",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "ee6bf5bf-bb0a-4a50-8327-cb654b19e298",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "Quaternion",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -2596,6 +2596,54 @@
                     "processors": "",
                     "groups": "",
                     "action": "Pinch Gap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Thrust",
+            "id": "588c4fd8-237e-4da1-a639-0c1124f58c2e",
+            "actions": [
+                {
+                    "name": "ThrustRH",
+                    "type": "Value",
+                    "id": "ceca4aaf-641d-4e2c-b4a6-4d88a2d43d67",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "ThrustLH",
+                    "type": "Button",
+                    "id": "ab4e65eb-29f7-4eea-a4a2-3dccc777b70d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "adc85f9f-213d-4e0c-a876-95f334e1c0f6",
+                    "path": "<XRController>{RightHand}/{TriggerButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ThrustRH",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "61af947a-fc3a-4416-933f-f98fadae2fbc",
+                    "path": "<XRController>{LeftHand}/{TriggerButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ThrustLH",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
