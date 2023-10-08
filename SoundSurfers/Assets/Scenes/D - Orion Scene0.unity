@@ -488,7 +488,6 @@ GameObject:
   - component: {fileID: 2143070776}
   - component: {fileID: 2143070775}
   - component: {fileID: 2143070781}
-  - component: {fileID: 2143070782}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -706,20 +705,7 @@ MonoBehaviour:
   sphereMat: {fileID: 2100000, guid: 75745d686825a424d8ad30fc703aa00a, type: 2}
   frameTextures:
   - {fileID: 2800000, guid: 62ccf80a08201fb47835504fa2f63b10, type: 3}
-  fPS: 0
---- !u!114 &2143070782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2143070774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75821a0d06a20eb4fa4864e67b63f78a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sphereObject: {fileID: 2143070774}
+  fPS: 40
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
