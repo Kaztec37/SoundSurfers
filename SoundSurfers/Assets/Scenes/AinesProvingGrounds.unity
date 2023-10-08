@@ -5796,8 +5796,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orbitCenter: {fileID: 1171561518}
-  orbitSpeed: 0.6
-  rotationSpeed: 3
+  orbitSpeed: 0.5
+  rotationSpeed: 1
 --- !u!1001 &1015926893
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8899,8 +8899,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orbitCenter: {fileID: 1171561518}
-  orbitSpeed: 0.6
-  rotationSpeed: 3
+  orbitSpeed: 0.5
+  rotationSpeed: 1
 --- !u!1001 &1683543408
 PrefabInstance:
   m_ObjectHideFlags: 0
