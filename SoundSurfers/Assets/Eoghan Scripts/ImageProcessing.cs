@@ -35,7 +35,7 @@ public class ImageProcessing : MonoBehaviour
                 // Resize the Texture2D and pixelColors array if the size changes
                 if (capturedTexture.width != textureWidth || capturedTexture.height != textureHeight)
                 {
-                    capturedTexture.Resize(textureWidth, textureHeight);
+                    capturedTexture.Reinitialize(textureWidth, textureHeight);
                     pixelColors = new Color[textureWidth * textureHeight];
                 }
 
