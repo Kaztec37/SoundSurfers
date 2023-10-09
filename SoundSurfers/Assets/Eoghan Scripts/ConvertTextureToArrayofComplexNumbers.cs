@@ -23,7 +23,7 @@ public class ConvertTextureToArrayofComplexNumbers : MonoBehaviour
         MakeComplexArray();
 
     }
-       
+
     public void MakeComplexArray()
     {
         Renderer renderer = GetComponent<Renderer>();
@@ -58,14 +58,14 @@ public class ConvertTextureToArrayofComplexNumbers : MonoBehaviour
         {
             string s = complexArray[i].ToString();
             string[] x = s.Split(',');
-           
+
 
             string q = x[0].Substring(1);
 
             // Debug.Log("Real: " + q);
 
-              float a = float.Parse(q);
-              floatArray[i] += a;
+            float a = float.Parse(q);
+            floatArray[i] += a;
         }
 
         AudioClip audioClip = AudioClip.Create("CustomAudioClip", floatArray.Length, 1, 44100, false);

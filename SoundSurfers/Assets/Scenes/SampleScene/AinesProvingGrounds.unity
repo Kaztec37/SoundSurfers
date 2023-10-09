@@ -11635,6 +11635,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Origin (XR Rig)
       objectReference: {fileID: 0}
+    - target: {fileID: 5769830860522802770, guid: 20a260535c4aad241901530a2cbc12ce,
+        type: 3}
+      propertyPath: m_MoveSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6710707988465681017, guid: 20a260535c4aad241901530a2cbc12ce,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
