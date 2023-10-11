@@ -27,11 +27,13 @@ public class FabCSound : MonoBehaviour
                 int x = (int)(pixelUV.x * tex.width);
                 int y = (int)(pixelUV.y * tex.height);
                 Color pixelColor = tex.GetPixel(x, y);
-
-                Debug.Log("RGB: " + pixelColor.r + ", " + pixelColor.g + ", " + pixelColor.b);
-                csound.SetChannel("red", pixelColor.r);
-                csound.SetChannel("green", pixelColor.g);
-                csound.SetChannel("blue", pixelColor.b);
+                int r = (int)(pixelColor.r * 255);
+                int g = (int)(pixelColor.g * 255);
+                int b = (int)(pixelColor.b * 255);
+                Debug.Log("RGB: " + r + ", " + g + ", " + b);
+                csound.SetChannel("red", r);
+                csound.SetChannel("green", g);
+                csound.SetChannel("blue", b);
             }
         }
     }
