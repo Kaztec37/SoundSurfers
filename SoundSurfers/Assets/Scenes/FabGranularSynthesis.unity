@@ -231,7 +231,7 @@ GameObject:
   - component: {fileID: 552760486}
   - component: {fileID: 552760489}
   - component: {fileID: 552760488}
-  - component: {fileID: 552760487}
+  - component: {fileID: 552760490}
   m_Layer: 0
   m_Name: CSound
   m_TagString: Untagged
@@ -254,18 +254,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 566138596}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &552760487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 552760485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16b9880a2582d65439b2946bc8341764, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &552760488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,7 +278,7 @@ MonoBehaviour:
 
     <CsOptions>
 
-    -odac -iadc -m128
+    -o dac ;-iadc -m128
 
     </CsOptions>
 
@@ -303,102 +291,69 @@ MonoBehaviour:
 
     ksmps = 32
 
-    nchnls = 3
+    nchnls = 2
 
     0dbfs = 1
 
     
 
-    giTable
-    ftgen 0, 0, sr, 2, 0 ;for one second of recording
+    giWFn
+    ftgen 0,0,16384,20,3,1
 
-    giHalfSine ftgen 0, 0,
-    1024, 9, .5, 1, 0
-
-    giDelay = 1 ;ms
-
-    
-
-    instr Record
-
-    aRed
-    chnget "red"
-
-    aGreen chnget "green"
-
-    aBlue chnget "blue"
-
-    gaWritePointer
-    = phasor(1)
-
-    tablew(aRed, gaWritePointer, giTable, 1)
-
-    tablew(aGreen,
-    gaWritePointer, giTable, 1)
-
-    tablew(aBlue, gaWritePointer, giTable, 1)
-
-    endin
-
-    
-
-    schedule("Record",0,-1)
+    giWave ftgen 0,0,2^10,10,1,1/2,1/4,1/8,1/16,1/32,1/64
 
     
 
     instr
-    Granulator
+    FabBryanSynth
 
-    kGrainDur = 30 ;milliseconds
+    kCps    chnget  "red"
 
-    kTranspos = -300 ;cent
+    kGDur   chnget  "green"
 
-    kDensity
-    = 50 ;Hz (grains per second)
+    kDens  
+    chnget  "blue"
 
-    kDistribution = .5 ;0-1
+    ;kGDur = 0.01 + kGDur ; initialisation to avoid perf error
+    0.0
 
-    kTrig = metro(kDensity)
+    ;kFmd    transeg 0,1,0,0, 10,4,15, 10,-4,0
 
-    if
-    kTrig==1 then
+    ;kPmd = 7
 
-    kPointer = k(gaWritePointer)-giDelay/1000
+    kFrPow
+    = 0
 
-    kOffset =
-    random:k(0,kDistribution/kDensity)
+    kPrPow = 0
 
-    schedulek("Grain",kOffset,kGrainDur/1000,kPointer,cent(kTranspos))
+    ;kCps = 100
 
-    endif
+    kPhs = 0
 
-    endin
+    kFmd = 3
 
-    
+    kPmd
+    transeg 0,1,0,0, 10,4,1,  10,-4,0
 
-    schedule("Granulator",giDelay/1000,-1)
+    ;kGDur = 0.08
 
-    
+    ;kDens = 200
 
-    instr
-    Grain
+    iMaxOvr
+    = 1000
 
-    iStart = p4
+    kFn = giWave
 
-    iSpeed = p5
+    aGrainOut grain3 kCps, kPhs, kFmd, kPmd, kGDur,
+    kDens, iMaxOvr, kFn, giWFn, kFrPow, kPrPow
 
-    aMod = poscil3:a(0.3, 1/p3, giHalfSine)
+    ;aOutEnv linseg  0, p3 * 0.05,
+    1, 0.05, 0.95, 0.8, 0.95, 0.1, 0
 
-    aOutR
-    = poscil3:a(aMod, iSpeed, giTable, iStart)
+    ;gaOut8 = aOut8; * 0.2 * aOutEnv
 
-    aOutG = poscil3:a(aMod, iSpeed,
-    giTable, iStart)
-
-    aOutB = poscil3:a(aMod, iSpeed, giTable, iStart)
-
-    out(aOutR,
-    aOutG, aOutB)
+    outs
+    aGrainOut * 0.5, aGrainOut * 0.5
 
     endin
 
@@ -408,10 +363,12 @@ MonoBehaviour:
 
     <CsScore>
 
-    ;f0
+    f0
     z
 
-    ;i "Grain" 1 -1
+    ;i "FabSynth" 1 -1
+
+    i"FabBryanSynth" 1 -1
 
     </CsScore>
 
@@ -531,6 +488,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &552760490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552760485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 780b6da51a4afb044b8d86608c112ea6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &566138595
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,58 +1,43 @@
 <CsoundSynthesizer>
 <CsOptions>
--odac -iadc -m128
+-o dac ;-iadc -m128
 </CsOptions>
 <CsInstruments>
 
 sr = 44100
 ksmps = 32
-nchnls = 3
+nchnls = 2
 0dbfs = 1
 
-giTable ftgen 0, 0, sr, 2, 0 ;for one second of recording
-giHalfSine ftgen 0, 0, 1024, 9, .5, 1, 0
-giDelay = 1 ;ms
+giWFn ftgen 0,0,16384,20,3,1
+giWave ftgen 0,0,2^10,10,1,1/2,1/4,1/8,1/16,1/32,1/64
 
-instr Record
-aRed chnget "red"
-aGreen chnget "green"
-aBlue chnget "blue"
-gaWritePointer = phasor(1)
-tablew(aRed, gaWritePointer, giTable, 1)
-tablew(aGreen, gaWritePointer, giTable, 1)
-tablew(aBlue, gaWritePointer, giTable, 1)
-endin
-
-schedule("Record",0,-1)
-
-instr Granulator
-kGrainDur = 30 ;milliseconds
-kTranspos = -300 ;cent
-kDensity = 50 ;Hz (grains per second)
-kDistribution = .5 ;0-1
-kTrig = metro(kDensity)
-if kTrig==1 then
-kPointer = k(gaWritePointer)-giDelay/1000
-kOffset = random:k(0,kDistribution/kDensity)
-schedulek("Grain",kOffset,kGrainDur/1000,kPointer,cent(kTranspos))
-endif
-endin
-
-schedule("Granulator",giDelay/1000,-1)
-
-instr Grain
-iStart = p4
-iSpeed = p5
-aMod = poscil3:a(0.3, 1/p3, giHalfSine)
-aOutR = poscil3:a(aMod, iSpeed, giTable, iStart)
-aOutG = poscil3:a(aMod, iSpeed, giTable, iStart)
-aOutB = poscil3:a(aMod, iSpeed, giTable, iStart)
-out(aOutR, aOutG, aOutB)
+instr FabBryanSynth
+kCps    chnget  "red"
+kGDur   chnget  "green"
+kDens   chnget  "blue"
+kGDur = 0.01 + kGDur ; initialisation to avoid perf error 0.0
+;kFmd    transeg 0,1,0,0, 10,4,15, 10,-4,0
+;kPmd = 7
+kFrPow = 0
+kPrPow = 0
+;kCps = 100
+kPhs = 0
+kFmd = 3
+kPmd transeg 0,1,0,0, 10,4,1,  10,-4,0
+;kGDur = 0.08
+;kDens = 200
+iMaxOvr = 1000
+kFn = giWave
+aGrainOut grain3 kCps, kPhs, kFmd, kPmd, kGDur, kDens, iMaxOvr, kFn, giWFn, kFrPow, kPrPow
+;aOutEnv linseg  0, p3 * 0.05, 1, 0.05, 0.95, 0.8, 0.95, 0.1, 0
+;gaOut8 = aOut8; * 0.2 * aOutEnv
+outs aGrainOut * 0.5, aGrainOut * 0.5
 endin
 
 </CsInstruments>
 <CsScore>
-;f0 z
-;i "Grain" 1 -1
+f0 z
+i"FabBryanSynth" 1 -1
 </CsScore>
 </CsoundSynthesizer>
