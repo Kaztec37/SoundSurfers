@@ -8,6 +8,7 @@
 - [Setup](#setup)
   * [Meta™ Quest 2™ setup](#meta-quest-2-setup)
   * [Install Unity™ ](#downloadUnity)
+  * [Clone the repository](#clone)
 - [Data](#data)
 
 ## Challenge
@@ -38,9 +39,10 @@ At the time of writting, this application targets the Meta™ Quest 2™ VR head
 ### Install Unity™ version 2022.3.10f1
 The applcation was designed and developped targeting the latest version of Unity3D™ game engine. At the time of development, this was version 2022.3.10f1. This repository may work with different versions of Unity. However, to mininise the risks of conflicts and errors, SoundSurfers recommend that this repository is used with Unity version 2023.3.10f1. SoundSurfers cannot guarantee that this repository will work as is with later versions of Unity. 
 
-**Clone the repository**
+### Clone the repository
 In the SoundSerfers GitHub™ repository, click on the green Code button. Use the url to install the repo with git or alternatively download a zipped folder of the project as required. This Unity™ project uses the CSound package to play a synthesis of the frequency created from the RGB values of the pixel of the setellite image that the user is looking at. This allows the user to hear what they see. The CSound package should download as part of the projet when you clone this repository. The following instructions are only provided for the interested developer who wants to install CSound into their own Unity™ project.
 
+**For the interested developer only**
 1. Install git on your computer. You can download Git from this link: https://git-scm.com/downloads
 2. Rory Walsh created a C# wrapper to allow developers to use the CSound application as a package in Unity™. Now that you have Git installed on your computer, you can install the CSound package in Unity™ by clicking on the Window -> Package Manager menu item.
 3. In the top left corner of the pop-up window, click the + symbol.
