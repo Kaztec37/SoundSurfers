@@ -19,11 +19,16 @@
 The interested reader can learn more at https://www.spaceappschallenge.org/2023/challenges/immersed-in-the-sounds-of-space/
 
 ## Solution
-Team SoundSurfers accept the challenge to create a different perceptual path to help users to understand and appreciate the wonders of the univers. We achieve this by desiging and devleoping immersive and interactive virtual reality (VR) sonifications targetting the Meta™ Quest 2™ VR headset.  This makes the experience of the given satellite imagery more immerive and interactive. This has potential for enhanced data analysis and public engagement applications. For accessability, the application has a default desktop scene to allow the user to run a demo without the need for any headset.
-
+Team SoundSurfers accept the challenge to create a different perceptual path to help users to understand and appreciate the wonders of the univers. We achieve this by desiging and devleoping immersive and interactive virtual reality (VR) sonifications targetting the Meta™ Quest 2™ VR headset.  The sonification path is guided by the user's head pose. This makes the experience of the given satellite imagery more immerive and interactive. This has potential for enhanced data analysis and public engagement applications. For accessability, the application has a default desktop scene to allow the user to experience a demo of the project's functionality without the need for any headset.
+ 
 ## Requirements
-This application has a default scene that allows the user to experience sonification of a NASA satellite image using keyboard or mouse input. However, the goal of this project is to make sonifications more immersive and interactiv. For the full immersirsive experience...
-Currently, this application targets the Meta™ Quest 2™
+This application has a default scene that allows the user to experience sonification of a NASA satellite image using keyboard or mouse input. However, the goal of this project is to make sonifications more immersive and interactive. For the full immersirsive experience it is best to use the required VR headset. Currently, this application targets the Meta™ Quest 2™ only. The requirement to 
+
+1 A Meta Quest 2 VR headset https://www.meta.com/ie/quest/products/quest-2/
+2 All of the crap needed to confiure the Quest 2.
+3 Unity game engine, preferably version 2022.3.10f1.
+4 The CSound package installed in Unity.
+5 Clone this repository
 
 ## Setup
 Currenlty, this application targets the Meta™ Quest 2™ VR headset only.
