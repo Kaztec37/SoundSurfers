@@ -1,5 +1,5 @@
 # Immersed in the Sounds of Space 
-**NASA Space Apps Challenge 2023** *regional submission hackathlone2023*
+**NASA Space Apps Challenge 2023** *regional submission*
 
 - [Challenge](#challenge)
 - [Solution](#solution)
