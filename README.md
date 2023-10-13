@@ -20,12 +20,12 @@ The interested reader can learn more at https://tinyurl.com/ysh68wfy
 Team SoundSurfers accept the challenge to create a different perceptual path to help users to understand and appreciate the wonders of the univers. We achieve this by desiging and devleoping immersive and interactive virtual reality (VR) sonifications targetting the Meta™ Quest 2™ VR headset.  The sonification path is guided by the user's head pose. This makes the experience of the given satellite imagery more immerive and interactive. This has potential for enhanced data analysis and public engagement applications. For accessability, the application has a default desktop scene to allow the user to experience a demo of the project's functionality without the need for any headset.
  
 ## Requirements
-The goal of this project is to make the NASA sonification approach to satellite imagery experiences even more immersive and interactive. <!--As such, this application has a 2D scene that allows mouse input to drive the path of sonification of a satellite image in the Unity™ game scene-->.For the fully immersirsive experience it is best to use the required VR headset. This application currently targets the Meta™ Quest 2™ only. The requirements to experience fully immerive and head pose driven sonifications at the time of writting (13/10/2023) are:
+The goal of this project is to make the NASA sonification approach to satellite imagery experiences even more immersive and interactive.For the fully immersirsive experience it is best to use the required VR headset. This application currently targets the Meta™ Quest 2™ only. The requirements to experience fully immerive and head pose driven sonifications at the time of writting (13/10/2023) are:
 
-1 A Meta Quest 2 VR headset https://tinyurl.com/2bz58mke
-2 The Quest 2 VR headset may inititally require installation of the Oculus desktop app for configurtion on your computer:
-3 Unity game engine, preferably version 2022.3.10f1.
-4 Clone this repository
+- Item 1 A Meta Quest 2 VR headset https://tinyurl.com/2bz58mke
+- Item 2 The Quest 2 VR headset may inititally require installation of the Oculus desktop app for configurtion on your computer: https://tinyurl.com/f4ujktz8
+- Item 3 Unity game engine, preferably version 2022.3.10f1.
+- Item 4 Clone this repository
 
 ## Setup
 Currenlty, this application targets the Meta™ Quest 2™ VR headset only.
