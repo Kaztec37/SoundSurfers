@@ -20,7 +20,7 @@ The interested reader can learn more at https://tinyurl.com/ysh68wfy
 ## Solution
 Team SoundSurfers accept the challenge to create a different perceptual path to help users to understand and appreciate the wonders of the univers. We achieve this by desiging and devleoping immersive and interactive virtual reality (VR) sonifications targetting the Meta™ Quest 2™ VR headset.  The sonification path is guided by the user's head pose. This makes the experience of the given satellite imagery more immerive and interactive. This has potential for enhanced data analysis and public engagement applications. For accessability, the application has a default desktop scene to allow the user to experience a demo of the project's functionality without the need for any headset.
 
-*** Video demonstration
+### Video demonstration
 ...insert video here
  
 ## Requirements
