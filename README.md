@@ -4,9 +4,9 @@
 
 - [The challenge](#challenge)
 - [Solution](#solution)
-- [Usage](#usage)
-  * [Importing](#importing)
-  * [Defining a type](#defining-a-type)
+- [Setup](#setup)
+  * [Install Unity™ ](#downloadUnity)
+  * [CSound](#csound)
   * [Defining a union](#defining-a-union)
   * [Record<string,T> and T[]](#record-string-t--and-t--)
   * [Encoding and Decoding](#encoding-and-decoding)
@@ -15,31 +15,16 @@
 ## Challenge
 Immersed in the Sounds of Space
 NASA offers a variety of “sonifications” – translations of 2D astronomical data into sound –that provide a new way to experience imagery and other information from space. Advanced instruments currently provide hyperspectral (many color) images from space that are 3D (two spatial dimensions and one color dimension), and sophisticated techniques can be used to enhance 2D astronomical images to make video representations called “fly-throughs” that allow viewers to experience what it would look like to move among space objects in 3D (three simulated spatial dimensions). Your challenge is to design a method to create sonifications of these 3D NASA space datasets to provide a different perceptual path that can help us understand and appreciate the wonders of the universe!
+The interested reader can learn more at https://www.spaceappschallenge.org/2023/challenges/immersed-in-the-sounds-of-space/
 
 ## Solution
-Team SoundSurfers accept the challenge to create a different perceptual path to help users to understand and appreciate the wonders of the univers. We achieve this by making the sonifications immersive and interactive using 3D virtual reality (VR)
+Team SoundSurfers accept the challenge to create a different perceptual path to help users to understand and appreciate the wonders of the univers. We achieve this by desiging and devleoping immersive and interactive virtual reality (VR) sonifications targetting the Meta™ Quest 2™ VR headset.
 
-```
-npm install https://github.com/camnewnham/msgpack-decorators @msgpack/msgpack
-```
+## Setup
 
-Update your `tsconfig.json` to add support for decorators and design time type referencing:
+### Install Unity™ version 2023.0.1f
 ```
-{
-  "compilerOptions": {
-    ...
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-  }
-  ...
-}
-```
-
-## Usage
-
-### Importing
-```
-import { encode, decode, key, union } from msgpack-decorators
+The applcation was designed and developped targeting the latest version of Unity3D™ game engine. At the time of development, this was version 2023.0.1f. This repository may work with different versions of Unity. However, to mininise the risks of conflicts and errors, SoundSurfers recommend that this repository is used with Unity version 2023.0.1f. SoundSurfers cannot guarentee that this repository will work as is in later versions of Unity. You can download and intall Unity by following the link https://unity.com/download.
 ```
 
 ### Defining a type
