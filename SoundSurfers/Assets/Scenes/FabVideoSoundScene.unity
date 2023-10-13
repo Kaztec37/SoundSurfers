@@ -992,6 +992,284 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba3e2296e3919b40babd421323c79ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &662128021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 662128022}
+  - component: {fileID: 662128025}
+  - component: {fileID: 662128024}
+  - component: {fileID: 662128023}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &662128022
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662128021}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1324495883}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &662128023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662128021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 780b6da51a4afb044b8d86608c112ea6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &662128024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662128021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d20258c641c94f0ea3dc32cfe3de904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logCsoundOutput: 0
+  mute: 0
+  processClipAudio: 0
+  loudVolumeWarning: 1
+  loudWarningThreshold: 10
+  csoundScore: 
+  environmentSettings: []
+  _csoundFileGUID: 2fbaf2f069974684582c545952d20107
+  _csoundString: '<CsoundSynthesizer>
+
+    <CsOptions>
+
+    -o dac ;-iadc -m128
+
+    </CsOptions>
+
+    <CsInstruments>
+
+    
+
+    sr
+    = 44100
+
+    ksmps = 32
+
+    nchnls = 2
+
+    0dbfs = 1
+
+    
+
+    giWFn
+    ftgen 0,0,16384,20,3,1
+
+    giWave ftgen 0,0,2^10,10,1,1/2,1/4,1/8,1/16,1/32,1/64
+
+    
+
+    instr
+    FabBryanSynth
+
+    kCps    chnget  "red"
+
+    kGDur   chnget  "green"
+
+    kDens  
+    chnget  "blue"
+
+    kGDur = 0.01 + kGDur ; initialisation to avoid perf error
+    0.0
+
+    ;kFmd    transeg 0,1,0,0, 10,4,15, 10,-4,0
+
+    ;kPmd = 7
+
+    kFrPow
+    = 0
+
+    kPrPow = 0
+
+    ;kCps = 100
+
+    kPhs = 0
+
+    kFmd = 3
+
+    kPmd
+    transeg 0,1,0,0, 10,4,1,  10,-4,0
+
+    ;kGDur = 0.08
+
+    ;kDens = 200
+
+    iMaxOvr
+    = 1000
+
+    kFn = giWave
+
+    aGrainOut grain3 kCps, kPhs, kFmd, kPmd, kGDur,
+    kDens, iMaxOvr, kFn, giWFn, kFrPow, kPrPow
+
+    ;aOutEnv linseg  0, p3 * 0.05,
+    1, 0.05, 0.95, 0.8, 0.95, 0.1, 0
+
+    ;gaOut8 = aOut8; * 0.2 * aOutEnv
+
+    outs
+    aGrainOut * 0.5, aGrainOut * 0.5
+
+    endin
+
+    
+
+    </CsInstruments>
+
+    <CsScore>
+
+    f0
+    z
+
+    i"FabBryanSynth" 0.5 -1
+
+    </CsScore>
+
+    </CsoundSynthesizer>
+
+'
+  _csoundFileName: FabGranularSynth.csd
+  _csoundAsset: {fileID: 102900000, guid: 2fbaf2f069974684582c545952d20107, type: 3}
+  _channels: []
+  _availableAudioChannels: []
+  _drawCsoundString: 0
+  _drawTestScore: 0
+  _drawSettings: 0
+  _drawChannels: 0
+  _drawAudioChannels: 0
+  _drawPresets: 0
+  _drawPresetsLoad: 0
+  _drawPresetsSave: 0
+  _drawPresetsImport: 0
+  _showRuntimeEnvironmentPath: 0
+  _currentPreset: 
+  _currentPresetSaveFolder: 
+  _currentPresetLoadFolder: 
+--- !u!82 &662128025
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662128021}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1041079488
 GameObject:
   m_ObjectHideFlags: 0
@@ -1165,7 +1443,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 662128022}
   m_Father: {fileID: 270206855}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1324495884
