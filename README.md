@@ -24,7 +24,7 @@ Team SoundSurfers accept the challenge to create a different perceptual path to 
 ...insert video here
  
 ## Requirements
-The goal of this project is to make the NASA sonification approach to satellite imagery experiences even more immersive and interactive.For the fully immersirsive experience it is best to use the required VR headset. This application currently targets the Meta™ Quest 2™ only. The requirements to experience fully immerive and head pose driven sonifications at the time of writting (13/10/2023) are:
+The goal of this project is to make the NASA sonification approach to satellite imagery experiences even more immersive and interactive. For the fully immersirsive experience it is best to use the required VR headset. This application currently targets the Meta™ Quest 2™ only. The requirements to experience fully immerive and head pose driven sonifications at the time of writting (13/10/2023) are:
 
 1. A Meta Quest 2 VR headset https://tinyurl.com/2bz58mke
 2. The Quest 2 VR headset may inititally require installation of the Oculus desktop app for configurtion on your computer: https://tinyurl.com/f4ujktz8
@@ -44,9 +44,14 @@ The applcation was designed and developped targeting the latest version of Unity
 This Unity™ application uses the CSound package to play a synthesis of the frequency created from the RGB values of the pixel of the setellite image that the user is looking at. This allows the user to hear what they see. The CSound package should download as part of the projet when you clone this repository. The following instructions are provided for the interested developer who wants to install CSound into their own Unity™ project.
 
 1. Install git on you computer. You can download Git from this link: https://git-scm.com/downloads
-2. 
+2. Rory Walsh created a C# wrapper to allow developers to use the CSound application as a package in Unity™. Now that you have Git installed on your computer, you can install the CSound package in Unity™ by clicking on the Window -> Package Manager menu item.
+3. In the top left corner of the pop-up window, click the + symbol.
+4. Click Add package from Git url...
+5. Paste this link into the url text box and click the add button
+6. Confirm installation of all of the default (green) elements in the pop-up window.
+7. Now you are ready to use CSound in your Unity project™.  
 
-The documentation for the Unity™ C# wrapper written by Rory Walsh is available here in his repository at https://tinyurl.com/yja6vwhw
+The documentation for the Unity™ C# wrapper written by Rory Walsh is available in his GitHub™ repository here https://tinyurl.com/yja6vwhw
 
 ## Data
-The sonifications of the game scenes in this project are created in real time using fourier transforms of the images provided in the NASA Space Apps challenge "Immersed in the Sounds of Space" competition resources found here https://tinyurl.com/3czu6rk9
+The sonifications of the NASA satellite imagery are created in real time using fourier transforms of the images provided in the NASA Space Apps challenge "Immersed in the Sounds of Space" competition resources https://tinyurl.com/3czu6rk9
