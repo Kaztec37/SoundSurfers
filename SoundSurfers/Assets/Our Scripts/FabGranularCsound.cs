@@ -8,8 +8,6 @@ public class FabGranularCsound : MonoBehaviour
     float g;
     int b;
 
-    private Texture2D destTexture;
-
     void Start()
     {
         mainCamera = Camera.main;
@@ -17,8 +15,7 @@ public class FabGranularCsound : MonoBehaviour
         r = 50;
         g = 0.2f;
         b = 50;
-
-        destTexture = new Texture2D(3840, 2160, TextureFormat.RGB24, false);
+        
     }
 
     void Update()
@@ -40,13 +37,12 @@ public class FabGranularCsound : MonoBehaviour
             if (rend != null)
             {
                 Vector2 pixelUV = hit.textureCoord;
-                var tex = rend.material.mainTexture;
-                
-                Graphics.CopyTexture(tex, destTexture);
+                Texture2D tex = (Texture2D)rend.material.mainTexture;
+
                 
                 int x = (int)(pixelUV.x * tex.width);
                 int y = (int)(pixelUV.y * tex.height);
-                Color pixelColor = destTexture.GetPixel(x, y);
+                Color pixelColor = tex.GetPixel(x, y);
                 r = (int)(pixelColor.r * 255);
                 g = pixelColor.g ;
                 b = (int)(pixelColor.b * 255);
@@ -57,8 +53,6 @@ public class FabGranularCsound : MonoBehaviour
                 csound.SetChannel("red", r);
                 csound.SetChannel("green", g);
                 csound.SetChannel("blue", b);
-
-
             } else {
                 Debug.Log("No Renderer found");
 

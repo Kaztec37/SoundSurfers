@@ -953,7 +953,7 @@ VideoPlayer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 501109061}
-  m_Enabled: 1
+  m_Enabled: 0
   m_VideoClip: {fileID: 32900000, guid: e3796d08914b25a4f80603bc5391df9a, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
@@ -1004,6 +1004,7 @@ GameObject:
   - component: {fileID: 662128025}
   - component: {fileID: 662128024}
   - component: {fileID: 662128023}
+  - component: {fileID: 662128026}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1033,7 +1034,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 662128021}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 780b6da51a4afb044b8d86608c112ea6, type: 3}
   m_Name: 
@@ -1270,6 +1271,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &662128026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662128021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f649e9767ecc3d6459a88ad7ea745bc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderTexture: {fileID: 8400000, guid: ad84f9c3aeaa6e5408c10b95ed8135c2, type: 2}
+  textureSize: {x: 512, y: 512}
 --- !u!1 &1041079488
 GameObject:
   m_ObjectHideFlags: 0
