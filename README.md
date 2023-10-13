@@ -25,10 +25,9 @@ Team SoundSurfers accept the challenge to create a different perceptual path to 
 This application has a default scene that allows the user to experience sonification of a NASA satellite image using keyboard or mouse input. However, the goal of this project is to make sonifications more immersive and interactive. For the full immersirsive experience it is best to use the required VR headset. Currently, this application targets the Meta™ Quest 2™ only. The requirement to 
 
 1 A Meta Quest 2 VR headset https://www.meta.com/ie/quest/products/quest-2/
-2 All of the crap needed to confiure the Quest 2.
+2 All of the apps needed to confiure the Quest 2....
 3 Unity game engine, preferably version 2022.3.10f1.
-4 The CSound package installed in Unity.
-5 Clone this repository
+4 Clone this repository
 
 ## Setup
 Currenlty, this application targets the Meta™ Quest 2™ VR headset only.
