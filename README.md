@@ -1,6 +1,6 @@
-# NASA Space Apps Challenge 2023 
-# Team SoundSurfers: regional submission: HackAthlone2023
-#  
+# Immersed in the Sounds of Space 
+# Team SoundSurfers
+# NASA Space Apps Challenge 2023 regional submission hackathlone2023
 
 - [Challenge](#challenge)
 - [Solution](#solution)
@@ -10,7 +10,7 @@
   * [Defining a union](#defining-a-union)
   * [Record<string,T> and T[]](#record-string-t--and-t--)
   * [Encoding and Decoding](#encoding-and-decoding)
-
+- [Data](#data)
 
 ## Challenge
 Immersed in the Sounds of Space 
@@ -81,3 +81,6 @@ If no type is specified, it will encode as the child type (Lizard).
 To encode as the union type, it must be specified (Animal)
 
 For a demonstration of available types, see the [tests](https://github.com/camnewnham/msgpack-decorators/blob/main/tests/index.test.ts)
+
+## Data
+The sonifications of the game scenes in this project are created in real time using fourier transforms of the images provided in the NASA Sapce Apps challenge "Immersed in the Sounds of Space" competition resources found here https://www.spaceappschallenge.org/2023/challenges/immersed-in-the-sounds-of-space/?tab=resources 
