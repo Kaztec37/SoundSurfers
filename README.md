@@ -1,5 +1,5 @@
 # Immersed in the Sounds of Space 
-**Team SoundSurfers**
+**@Team SoundSurfers**
 NASA Space Apps Challenge 2023 *regional submission hackathlone2023*
 
 - [Challenge](#challenge)
@@ -28,9 +28,9 @@ The applcation was designed and developped targeting the latest version of Unity
 You can download and intall Unity by following the link https://unity.com/download.
 
 ### CSound
-This Unity™ application uses the CSound package to play a synthesis of the frequency created from the scene texture. This allows the user to hear what they see. This makes the experience of the given sateliite imagry more immerive and interactive. This has applications for data analysis and public engagement. 
+This Unity™ application uses the CSound package to play a synthesis of the frequency created from the scene texture. This allows the user to hear what they see. This makes the experience of the given satellite imagery more immerive and interactive. This has potential for enhanced data analysis and public engagement applications. 
 
-To install the CSound package, you need to:
+To install the CSound package in Unity™, you need to:
 
 Step 1: Install git on you computer. You can download Git from this link: https://git-scm.com/downloads
 
