@@ -6,7 +6,7 @@
 - [Solution](#solution)
 - [Setup](#setup)
   * [Install Unity™ ](#downloadUnity)
-  * [CSound](#csound)
+  * [Install the CSound package in Unity™](#csound)
   * [Defining a union](#defining-a-union)
   * [Record<string,T> and T[]](#record-string-t--and-t--)
   * [Encoding and Decoding](#encoding-and-decoding)
@@ -22,27 +22,17 @@ Team SoundSurfers accept the challenge to create a different perceptual path to 
 
 ## Setup
 
-### Install Unity™ version 2023.0.1f
-```
-The applcation was designed and developped targeting the latest version of Unity3D™ game engine. At the time of development, this was version 2023.0.1f. This repository may work with different versions of Unity. However, to mininise the risks of conflicts and errors, SoundSurfers recommend that this repository is used with Unity version 2023.0.1f. SoundSurfers cannot guarentee that this repository will work as is in later versions of Unity. You can download and intall Unity by following the link https://unity.com/download.
-```
+### Install Unity™ version 2022.3.10f1
+The applcation was designed and developped targeting the latest version of Unity3D™ game engine. At the time of development, this was version 2022.3.10f1. This repository may work with different versions of Unity. However, to mininise the risks of conflicts and errors, SoundSurfers recommend that this repository is used with Unity version 2023.3.10f1. SoundSurfers cannot guarentee that this repository will work as is with later versions of Unity. You can download and intall Unity by following the link https://unity.com/download.
 
-### Defining a type
+### CSound
+This Unity™ application uses the CSound package to play a synthesis of the frequency created from the scene texture. This allows the user to hear what they see. This makes the experience of the given sateliite imagry more immerive and interactive. This has applications for data analysis and public engagement. 
+To install the CSound package, you need to:
 
-Using numeric keys
-```
-class Animal {
-  @key(0)
-  legs: number;
-}
-```
-or string keys
-```
-class Animal {
-  @key("legs")
-  legs: number;
-}
-```
+Step 1: Install git on you computer from this link https://git-scm.com/downloads
+
+Step 2: 
+
 
 ### Defining a union
 Unions are serialized to match [Messagepack C#](https://github.com/neuecc/MessagePack-CSharp#union), however are defined on the child type rather than the parent class.
