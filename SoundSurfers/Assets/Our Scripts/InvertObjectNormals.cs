@@ -7,6 +7,8 @@ public class InvertObjectNormals : MonoBehaviour
     void Awake()
     {
         InvertSphere();
+        gameObject.AddComponent<MeshCollider>();
+        InvertSphere();
     }
     void InvertSphere()
     {

@@ -28,11 +28,12 @@ public class FabGranularCsound : MonoBehaviour
         csound.SetChannel("red", r);
         csound.SetChannel("green", g);
         csound.SetChannel("blue", b);
+        Debug.Log("RGB: " + r + ", " + g + ", " + b);
+
 
         if (Physics.Raycast(ray, out hit))
         {
             Renderer rend = hit.collider.GetComponent<Renderer>();
-
             if (rend != null)
             {
                 Vector2 pixelUV = hit.textureCoord;
@@ -44,13 +45,17 @@ public class FabGranularCsound : MonoBehaviour
                 g = pixelColor.g ;
                 b = (int)(pixelColor.b * 255);
                 Debug.Log("RGB: " + r + ", " + g + ", " + b);
-                if (r == 0 && g == 0 && b == 0){
-                    r = 1; g = 0.5f; b = 1;
+                if (r < 1 && g == 0 && b < 1){
+                    r = 2; g = 0.5f; b = 2  ;
                 }
                 csound.SetChannel("red", r);
                 csound.SetChannel("green", g);
                 csound.SetChannel("blue", b);
+            } else {
+                Debug.Log("No Renderer found");
+
             }
         }
     }
 }
+
