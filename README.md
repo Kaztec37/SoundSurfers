@@ -42,7 +42,7 @@ The applcation was designed and developped targeting the latest version of Unity
 ### Clone the repository
 This Unity™ application uses the CSound package to play a synthesis of the frequency created from the RGB values of the pixel of the setellite image that the user is looking at. This allows the user to hear what they see. The CSound package should download as part of the projet when you clone this repository. The following instructions are provided for the interested developer who wants to install CSound into their own Unity™ project.
 
-1. Install git on you computer. You can download Git from this link: https://git-scm.com/downloads
+1. Install git on your computer. You can download Git from this link: https://git-scm.com/downloads
 2. Rory Walsh created a C# wrapper to allow developers to use the CSound application as a package in Unity™. Now that you have Git installed on your computer, you can install the CSound package in Unity™ by clicking on the Window -> Package Manager menu item.
 3. In the top left corner of the pop-up window, click the + symbol.
 4. Click Add package from Git url...
