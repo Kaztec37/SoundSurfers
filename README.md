@@ -4,9 +4,10 @@
 - [Challenge](#challenge)
 - [Solution](#solution)
 - [Setup](#setup)
+  * [Meta™ Quest 2™ setup](#meta-quest-2-setup)
   * [Install Unity™ ](#downloadUnity)
   * [Install the CSound package in Unity™](#csound) 
-  * [Defining a union](#defining-a-union)
+  
   * [Record<string,T> and T[]](#record-string-t--and-t--)
   * [Encoding and Decoding](#encoding-and-decoding)
 - [Data](#data)
@@ -21,6 +22,9 @@ The interested reader can learn more at https://www.spaceappschallenge.org/2023/
 Team SoundSurfers accept the challenge to create a different perceptual path to help users to understand and appreciate the wonders of the univers. We achieve this by desiging and devleoping immersive and interactive virtual reality (VR) sonifications targetting the Meta™ Quest 2™ VR headset.
 
 ## Setup
+
+### Meta Quest 2 setup
+
 ### Install Unity™ version 2022.3.10f1
 The applcation was designed and developped targeting the latest version of Unity3D™ game engine. At the time of development, this was version 2022.3.10f1. This repository may work with different versions of Unity. However, to mininise the risks of conflicts and errors, SoundSurfers recommend that this repository is used with Unity version 2023.3.10f1. SoundSurfers cannot guarantee that this repository will work as is with later versions of Unity. 
 
@@ -36,7 +40,7 @@ Step 1: Install git on you computer. You can download Git from this link: https:
 Step 2: 
 
 
-### Defining a union
+
 Unions are serialized to match [Messagepack C#](https://github.com/neuecc/MessagePack-CSharp#union), however are defined on the child type rather than the parent class.
 
 ```
