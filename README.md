@@ -1,6 +1,5 @@
 # Immersed in the Sounds of Space 
-**@Kaztex37/SoundSurfers**
-NASA Space Apps Challenge 2023 *regional submission hackathlone2023*
+**NASA Space Apps Challenge 2023** *regional submission hackathlone2023*
 
 - [Challenge](#challenge)
 - [Solution](#solution)
