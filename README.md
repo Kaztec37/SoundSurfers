@@ -3,11 +3,11 @@
 
 - [Challenge](#challenge)
 - [Solution](#solution)
+- [Requirements](#requirements)
 - [Setup](#setup)
   * [Meta™ Quest 2™ setup](#meta-quest-2-setup)
   * [Install Unity™ ](#downloadUnity)
-  * [Install the CSound package in Unity™](#csound) 
-  
+  * [Install the CSound package in Unity™](#csound)  
   * [Record<string,T> and T[]](#record-string-t--and-t--)
   * [Encoding and Decoding](#encoding-and-decoding)
 - [Data](#data)
@@ -19,9 +19,14 @@
 The interested reader can learn more at https://www.spaceappschallenge.org/2023/challenges/immersed-in-the-sounds-of-space/
 
 ## Solution
-Team SoundSurfers accept the challenge to create a different perceptual path to help users to understand and appreciate the wonders of the univers. We achieve this by desiging and devleoping immersive and interactive virtual reality (VR) sonifications targetting the Meta™ Quest 2™ VR headset.
+Team SoundSurfers accept the challenge to create a different perceptual path to help users to understand and appreciate the wonders of the univers. We achieve this by desiging and devleoping immersive and interactive virtual reality (VR) sonifications targetting the Meta™ Quest 2™ VR headset.  This makes the experience of the given satellite imagery more immerive and interactive. This has potential for enhanced data analysis and public engagement applications. For accessability, the application has a default desktop scene to allow the user to run a demo without the need for any headset.
+
+## Requirements
+This application has a default scene that allows the user to experience sonification of a NASA satellite image using keyboard or mouse input. However, the goal of this project is to make sonifications more immersive and interactiv. For the full immersirsive experience...
+Currently, this application targets the Meta™ Quest 2™
 
 ## Setup
+Currenlty, this application targets the Meta™ Quest 2™ VR headset only.
 
 ### Meta Quest 2 setup
 
@@ -31,7 +36,7 @@ The applcation was designed and developped targeting the latest version of Unity
 You can download and intall Unity by following the link https://unity.com/download.
 
 ### CSound
-This Unity™ application uses the CSound package to play a synthesis of the frequency created from the scene texture. This allows the user to hear what they see. This makes the experience of the given satellite imagery more immerive and interactive. This has potential for enhanced data analysis and public engagement applications. 
+This Unity™ application uses the CSound package to play a synthesis of the frequency created from the scene texture. This allows the user to hear what they see.
 
 To install the CSound package in Unity™, you need to:
 
