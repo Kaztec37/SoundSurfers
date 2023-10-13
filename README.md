@@ -1,11 +1,9 @@
-# SoundSurfers
-# msgpack-decorators
-Typescript decorators for clear messagepack formatting with @msgpack/msgpack
+# NASA Space Apps Challenge 2023 
+# Team SoundSurfers regional submission, HackAthlone2023
+#  
 
-![example workflow](https://github.com/camnewnham/msgpack-decorators/actions/workflows/main.yml/badge.svg)
-
-- [Purpose](#purpose)
-- [Setup](#setup)
+- [The challenge](#challenge)
+- [Solution](#solution)
 - [Usage](#usage)
   * [Importing](#importing)
   * [Defining a type](#defining-a-type)
@@ -14,11 +12,12 @@ Typescript decorators for clear messagepack formatting with @msgpack/msgpack
   * [Encoding and Decoding](#encoding-and-decoding)
 
 
-## Purpose
-This project allows you to clearly define your messagepack types to support operability with other messagepack implementation. It's designed with [Messagepack C#](https://github.com/neuecc/MessagePack-CSharp) in mind and largely follows the same schema design pattern. Performance is not (yet) a focus.
+## Challenge
+Immersed in the Sounds of Space
+NASA offers a variety of “sonifications” – translations of 2D astronomical data into sound –that provide a new way to experience imagery and other information from space. Advanced instruments currently provide hyperspectral (many color) images from space that are 3D (two spatial dimensions and one color dimension), and sophisticated techniques can be used to enhance 2D astronomical images to make video representations called “fly-throughs” that allow viewers to experience what it would look like to move among space objects in 3D (three simulated spatial dimensions). Your challenge is to design a method to create sonifications of these 3D NASA space datasets to provide a different perceptual path that can help us understand and appreciate the wonders of the universe!
 
-## Setup
-Add to your project with npm:
+## Solution
+Team SoundSurfers accept the challenge to create a different perceptual path to help users to understand and appreciate the wonders of the univers. We achieve this by making the sonifications immersive and interactive using 3D virtual reality (VR)
 
 ```
 npm install https://github.com/camnewnham/msgpack-decorators @msgpack/msgpack
