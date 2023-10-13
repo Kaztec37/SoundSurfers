@@ -1,6 +1,6 @@
 # Immersed in the Sounds of Space 
-# Team SoundSurfers
-# NASA Space Apps Challenge 2023 regional submission hackathlone2023
+**Team SoundSurfers**
+NASA Space Apps Challenge 2023 regional submission hackathlone2023
 
 - [Challenge](#challenge)
 - [Solution](#solution)
