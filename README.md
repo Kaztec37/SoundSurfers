@@ -28,24 +28,25 @@ The goal of this project is to make the NASA sonification approach to satellite 
 
 1. A Meta Quest 2 VR headset https://tinyurl.com/2bz58mke
 2. The Quest 2 VR headset may inititally require installation of the Oculus desktop app for configurtion on your computer: https://tinyurl.com/f4ujktz8
-3.  Unity game engine, preferably version 2022.3.10f1 https://unity.com/download
-4.  Clone this repository and run the application in Unity™
+3.  Unity game engine, preferably version 2022.3.10f1. This is downloaded using Unity Hub™ https://unity.com/download
+4.  Clone this GitHub™ repository and run the application in Unity™
 
 ## Setup
 At the time of writting, this application targets the Meta™ Quest 2™ VR headset only.
 
 ### Meta Quest 2 setup
-Run the Oculus desktop app on your computer in order for Unity to detect your Meta™ Quest 2™ headset.
+Run the Oculus desktop app on your computer to enable Unity to communicate with your Meta™ Quest 2™.
 
 ### Install Unity™ version 2022.3.10f1
 The applcation was designed and developped targeting the latest version of Unity3D™ game engine. At the time of development, this was version 2022.3.10f1. This repository may work with different versions of Unity. However, to mininise the risks of conflicts and errors, SoundSurfers recommend that this repository is used with Unity version 2023.3.10f1. SoundSurfers cannot guarantee that this repository will work as is with later versions of Unity. 
 
 ### Clone the repository
-This Unity™ application uses the CSound package to play a synthesis of the frequency created from the given pixel values of the scene texture that the user is looking at. This allows the user to hear what they see. The CSound package should download as part of the projet when you clone this repository. The following instructions are provided for the interested developer who wants to install CSound into their own Unity™ project.
+This Unity™ application uses the CSound package to play a synthesis of the frequency created from the RGB values of the pixel of the setellite image that the user is looking at. This allows the user to hear what they see. The CSound package should download as part of the projet when you clone this repository. The following instructions are provided for the interested developer who wants to install CSound into their own Unity™ project.
 
 1. Install git on you computer. You can download Git from this link: https://git-scm.com/downloads
-2.  
+2. 
 
+The documentation for the Unity™ C# wrapper written by Rory Walsh is available here in his repository at https://tinyurl.com/yja6vwhw
 
 ## Data
 The sonifications of the game scenes in this project are created in real time using fourier transforms of the images provided in the NASA Space Apps challenge "Immersed in the Sounds of Space" competition resources found here https://tinyurl.com/3czu6rk9
