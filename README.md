@@ -35,7 +35,7 @@ Currenlty, this application targets the Meta™ Quest 2™ VR headset only.
 ### Install Unity™ version 2022.3.10f1
 The applcation was designed and developped targeting the latest version of Unity3D™ game engine. At the time of development, this was version 2022.3.10f1. This repository may work with different versions of Unity. However, to mininise the risks of conflicts and errors, SoundSurfers recommend that this repository is used with Unity version 2023.3.10f1. SoundSurfers cannot guarantee that this repository will work as is with later versions of Unity. 
 
-You can download and intall Unity by following the link https://tinyurl.com/4eh38xxm
+You can download and intall Unity by following the link https://tinyurl.com/28e4f59r
 
 ### CSound
 This Unity™ application uses the CSound package to play a synthesis of the frequency created from the scene texture. This allows the user to hear what they see.
