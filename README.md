@@ -26,9 +26,9 @@ Team SoundSurfers accept the challenge to create a different perceptual path to 
 ## Requirements
 The goal of this project is to make the NASA sonification approach to satellite imagery experiences even more immersive and interactive. For the fully immersirsive experience it is best to use the required VR headset. This application currently targets the Meta™ Quest 2™ only. The requirements to experience fully immerive and head pose driven sonifications at the time of writting (13/10/2023) are:
 
-1. A Meta Quest 2 VR headset https://tinyurl.com/2bz58mke
-2. The Quest 2 VR headset may inititally require installation of the Oculus desktop app for configurtion on your computer: https://tinyurl.com/f4ujktz8
-3.  Unity game engine, preferably version 2022.3.10f1. This is downloaded using Unity Hub™ https://unity.com/download
+1. A Meta™ Quest 2™ VR headset https://tinyurl.com/2bz58mke
+2. The Quest 2™ VR headset may inititally require installation of the Oculus desktop app for configurtion on your computer: https://tinyurl.com/f4ujktz8
+3.  Unity™ game engine, preferably version 2022.3.10f1. This is downloaded using Unity™ Hub https://unity.com/download
 4.  Clone this GitHub™ repository and run the application in Unity™
 
 ## Setup
