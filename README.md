@@ -32,10 +32,9 @@ The goal of this project is to make the NASA sonification approach to satellite 
 4.  Clone this GitHub™ repository and run the application in Unity™
 
 ## Setup
-At the time of writting, this application targets the Meta™ Quest 2™ VR headset only.
 
 ### Meta Quest 2 setup
-Run the Oculus desktop app on your computer to enable Unity to communicate with your Meta™ Quest 2™.
+At the time of writting, this application targets the Meta™ Quest 2™ VR headset only. Run the Oculus desktop app on your computer to enable Unity to communicate with your Meta™ Quest 2™.
 
 ### Install Unity™ version 2022.3.10f1
 The applcation was designed and developped targeting the latest version of Unity3D™ game engine. At the time of development, this was version 2022.3.10f1. This repository may work with different versions of Unity. However, to mininise the risks of conflicts and errors, SoundSurfers recommend that this repository is used with Unity version 2023.3.10f1. SoundSurfers cannot guarantee that this repository will work as is with later versions of Unity. 
@@ -47,9 +46,9 @@ This Unity™ application uses the CSound package to play a synthesis of the fre
 2. Rory Walsh created a C# wrapper to allow developers to use the CSound application as a package in Unity™. Now that you have Git installed on your computer, you can install the CSound package in Unity™ by clicking on the Window -> Package Manager menu item.
 3. In the top left corner of the pop-up window, click the + symbol.
 4. Click Add package from Git url...
-5. Paste this link into the url text box and click the add button
+5. Paste this link into the url text box https://github.com/rorywalsh/CsoundUnity.git and click the add button.
 6. Confirm installation of all of the default (green) elements in the pop-up window.
-7. Now you are ready to use CSound in your Unity project™.  
+7. Now you are ready to use CSound in your own Unity project™.  
 
 The documentation for the Unity™ C# wrapper written by Rory Walsh is available in his GitHub™ repository here https://tinyurl.com/yja6vwhw
 
