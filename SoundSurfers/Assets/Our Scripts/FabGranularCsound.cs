@@ -38,6 +38,8 @@ public class FabGranularCsound : MonoBehaviour
             {
                 Vector2 pixelUV = hit.textureCoord;
                 Texture2D tex = (Texture2D)rend.material.mainTexture;
+
+                
                 int x = (int)(pixelUV.x * tex.width);
                 int y = (int)(pixelUV.y * tex.height);
                 Color pixelColor = tex.GetPixel(x, y);
