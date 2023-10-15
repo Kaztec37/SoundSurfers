@@ -18,13 +18,13 @@
 The interested reader can learn more at https://tinyurl.com/ysh68wfy
 
 ## Solution
-Team SoundSurfers accept the challenge to create a different perceptual path to help users to understand and appreciate the wonders of the univers. We achieve this by desiging and devleoping immersive and interactive virtual reality (VR) sonifications targetting the Meta™ Quest 2™ VR headset.  The sonification path is guided by the user's head pose. This makes the experience of the given satellite imagery more immerive and interactive. This has potential for enhanced data analysis and public engagement applications. 
+Team SoundSurfers accept the challenge to create a different perceptual path to help users to understand and appreciate the wonders of the univers. We achieve this by desiging and devleoping immersive and interactive virtual reality (VR) sonifications targetting the Meta™ Quest 2™ VR headset.  The sonification path is guided by the user's head pose. This makes the experience of the given satellite imagery more immersive and interactive. Research has showcased how VR can be used to assist people with visual impairments and endow users with superhuman perception. This VR solution has potential for enhanced data analysis, acessability and public engagement applications with customised synthesis of the image frequencies. 
 
 ### Video demonstration
 ...insert video here
  
 ## Requirements
-The goal of this project is to make the NASA sonification approach to satellite imagery experiences even more immersive and interactive. For the fully immersirsive experience it is best to use the required VR headset. This application currently targets the Meta™ Quest 2™ only. The requirements to experience fully immerive and head pose driven sonifications at the time of writting (13/10/2023) are:
+The goal of this project is to make the NASA sonification approach to satellite imagery experiences even more immersive and interactive. For the fully immersive experience it is best to use the required VR headset. This application currently targets the Meta™ Quest 2™ only. The requirements to experience fully immersive and head pose driven sonifications at the time of writting (13/10/2023) are:
 
 1. A Meta™ Quest 2™ VR headset https://tinyurl.com/2bz58mke
 2. The Quest 2™ VR headset may inititally require installation of the Oculus desktop app for configurtion on your computer: https://tinyurl.com/f4ujktz8
