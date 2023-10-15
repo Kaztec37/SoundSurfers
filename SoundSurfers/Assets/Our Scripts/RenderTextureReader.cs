@@ -1,16 +1,18 @@
 using UnityEngine;
+using UnityEngine.Video;
 
 public class RenderTextureReader : MonoBehaviour
 {
     private Camera mainCamera;
     CsoundUnity csound;
+    VideoPlayer videoPlayer;
     int r;
     float g;
     int b;
 
     //private Texture2D destTexture;
     //Texture2D rTex;
-    RenderTexture rTex;
+    //RenderTexture vTex;
 
     void Start()
     {
@@ -20,10 +22,25 @@ public class RenderTextureReader : MonoBehaviour
         g = 0.2f;
         b = 50;
 
+
+
+    	/*
         Texture2D tex = new Texture2D(3840, 2160, TextureFormat.RGBA32, false);
         RenderTexture.active = rTex;
         tex.ReadPixels(new Rect(0, 0, rTex.width, rTex.height), 0, 0);
         tex.Apply();
+        */
+        // Renderer vRend = GetComponent<Renderer>();
+        // RenderTexture vTex = (Texture2D)videoPlayer.texture;
+        // vRend.material.mainTexture = vTex;
+
+        videoPlayer = gameObject.AddComponent<VideoPlayer>();
+
+        //Texture2D convertedTex2D = new Texture2D(videoPlayer.texture.width, videoPlayer.texture.height, TextureFormat.ARGB32, false);
+        Texture2D convertedTex2D = new Texture2D(Screen.width, Screen.height, TextureFormat.ARGB32, false);
+        convertedTex2D.ReadPixels(new Rect(0, 0, videoPlayer.texture.width, videoPlayer.texture.height), 0, 0);
+        convertedTex2D.Apply();
+
     }
 
     void Update()
