@@ -13,22 +13,31 @@ public class FabVRGranular : MonoBehaviour
     void Start()
     {
         // mainCamera = Camera.main;
-        GameObject XRCamera = GameObject.Find("CSound");
+        //GameObject XRCamera = GameObject.Find("CSound");
+        csound = GetComponent<CsoundUnity>();
 
-        if (XRCamera == null)
-        {
-            Debug.Log("Didnt find camera");
+        // if (XRCamera == null)
+        // {
+        //     Debug.Log("Didnt find camera");
 
-        }
-        else {          
+        // }
+        // else {          
 
-            csound = XRCamera.GetComponent<CsoundUnity>();
+            //csound = XRCamera.GetComponent<CsoundUnity>();
+            if (csound == null){
+                Debug.Log("Not found csound");
+            } else {
+                Debug.Log("csound FOUND !!!!");
+            }
             
             r = 50;
             g = 0.2f;
             b = 50;
-            Debug.Log("found cSound script, RGB set");
-        }
+            csound.SetChannel("red", r);
+            csound.SetChannel("green", g);
+            csound.SetChannel("blue", b);
+            //Debug.Log("found cSound script, RGB set");
+        //}
     }
 
     void Update()
@@ -47,48 +56,49 @@ public class FabVRGranular : MonoBehaviour
         //    Debug.Log("CSound gameobject forward is: " + cameraForward);
 
         r = 50;
-           g = 0.2f;
-           b = 50;
-           csound.SetChannel("red", r);
-           csound.SetChannel("green", g);
-           csound.SetChannel("blue", b);
-           Debug.Log("RGB: " + r + ", " + g + ", " + b);
+        g = 0.2f;
+        b = 50;
+        // csound.SetChannel("red", r);
+        // csound.SetChannel("green", g);
+        // csound.SetChannel("blue", b);
+        
+        Debug.Log("RGB: " + r + ", " + g + ", " + b);
 
            // Create a ray from the camera's position and forward vector
-           Ray ray = new Ray(rayOrigin, rayDirection);
-           RaycastHit hit;
+        Ray ray = new Ray(rayOrigin, rayDirection);
+        RaycastHit hit;
 
-           if (Physics.Raycast(ray, out hit))
-           {
-               Renderer rend = hit.collider.GetComponent<Renderer>();
-               if (rend != null)
-               {
-                   Vector2 pixelUV = hit.textureCoord;
-                   Texture2D tex = (Texture2D)rend.material.mainTexture;
+        if (Physics.Raycast(ray, out hit))
+        {
+            Renderer rend = hit.collider.GetComponent<Renderer>();
+            if (rend != null)
+            {
+                Vector2 pixelUV = hit.textureCoord;
+                Texture2D tex = (Texture2D)rend.material.mainTexture;
 
-                   int x = (int)(pixelUV.x * tex.width);
-                   int y = (int)(pixelUV.y * tex.height);
-                   Color pixelColor = tex.GetPixel(x, y);
-                   r = (int)(pixelColor.r * 255);
-                   g = pixelColor.g * 255;
-                   b = (int)(pixelColor.b * 255);
-                   Debug.Log("RGB: " + r + ", " + g + ", " + b);
+                int x = (int)(pixelUV.x * tex.width);
+                int y = (int)(pixelUV.y * tex.height);
+                Color pixelColor = tex.GetPixel(x, y);
+                r = (int)(pixelColor.r * 255);
+                g = pixelColor.g;
+                b = (int)(pixelColor.b * 255);
+                Debug.Log("RGB: " + r + ", " + g * 255 + ", " + b);
 
-                   if (r < 1 && g == 0 && b < 1)
-                   {
-                       r = 2;
-                       g = 0.5f;
-                       b = 2;
-                   }
+                if (r < 5 && g < 0.2f && b < 5)
+                {
+                    r = 50;
+                    g = 0.2f;
+                    b = 50;
+                }
 
-                   csound.SetChannel("red", r);
-                   csound.SetChannel("green", g);
-                   csound.SetChannel("blue", b);
-               }
-               else
-               {
-                   Debug.Log("No Renderer found");
-               }
-           }
+                csound.SetChannel("red", r);
+                csound.SetChannel("green", g);
+                csound.SetChannel("blue", b);
+            }
+            else
+            {
+                Debug.Log("No Renderer found");
+            }
+        }
     }
 }

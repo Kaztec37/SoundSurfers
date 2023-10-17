@@ -38,6 +38,6 @@ endin
 </CsInstruments>
 <CsScore>
 f0 z
-i"FabBryanSynth" 0.5 -1
+i"FabBryanSynth" 1 -1
 </CsScore>
 </CsoundSynthesizer>

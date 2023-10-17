@@ -762,9 +762,9 @@ GameObject:
   - component: {fileID: 501109064}
   - component: {fileID: 501109063}
   - component: {fileID: 501109062}
-  - component: {fileID: 501109067}
   - component: {fileID: 501109066}
   - component: {fileID: 501109068}
+  - component: {fileID: 501109069}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -865,23 +865,35 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 501109061}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e9eab48983b8d04fb8543e584a0f1ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 501109067}
---- !u!82 &501109067
-AudioSource:
+  audioSource: {fileID: 0}
+--- !u!114 &501109068
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 501109061}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bba3e2296e3919b40babd421323c79ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!82 &501109069
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501109061}
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e86f761088611834aa325a113d26f552, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 29b3144fdc43bca4b87c60b3541e9a4e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -967,18 +979,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &501109068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 501109061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bba3e2296e3919b40babd421323c79ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1324495882
 GameObject:
   m_ObjectHideFlags: 0
@@ -992,7 +992,6 @@ GameObject:
   - component: {fileID: 1324495886}
   - component: {fileID: 1324495885}
   - component: {fileID: 1324495884}
-  - component: {fileID: 1324495888}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1228,18 +1227,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &1324495888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1324495882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 923a63b850367e140aab3a4be44905e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1428438201
 GameObject:
   m_ObjectHideFlags: 0
@@ -1661,7 +1648,6 @@ GameObject:
   - component: {fileID: 1938060838}
   - component: {fileID: 1938060840}
   - component: {fileID: 1938060839}
-  - component: {fileID: 1938060841}
   - component: {fileID: 1938060842}
   m_Layer: 0
   m_Name: CSound
@@ -1797,7 +1783,7 @@ MonoBehaviour:
     f0
     z
 
-    i"FabBryanSynth" 0.5 -1
+    i"FabBryanSynth" 1 -1
 
     </CsScore>
 
@@ -1809,9 +1795,9 @@ MonoBehaviour:
   _channels: []
   _availableAudioChannels: []
   _drawCsoundString: 0
-  _drawTestScore: 0
+  _drawTestScore: 1
   _drawSettings: 0
-  _drawChannels: 0
+  _drawChannels: 1
   _drawAudioChannels: 0
   _drawPresets: 0
   _drawPresetsLoad: 0
@@ -1917,18 +1903,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1938060841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1938060837}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 780b6da51a4afb044b8d86608c112ea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1938060842
 MonoBehaviour:
   m_ObjectHideFlags: 0
