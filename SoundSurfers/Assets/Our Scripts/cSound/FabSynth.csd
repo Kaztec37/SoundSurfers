@@ -7,7 +7,7 @@
 
 sr = 44100
 ksmps = 32
-nchnls = 3
+nchnls = 2
 0dbfs = 1
 
 instr FabSynth 
@@ -20,7 +20,9 @@ aModulatorBlue poscil 20, kBlue
 aReModRed poscil 0.5, 250+aModulatorRed
 aReModGreen poscil 0.5, 250+aModulatorGreen
 aReModBlue poscil 0.5, 250+aModulatorBlue
-outc aReModRed, aReModGreen, aReModBlue
+aOurOutput = (aReModRed * aReModGreen * aReModBlue)
+outs aOurOutput, aOurOutput
+//outc aReModRed, aReModGreen, aReModBlue
 ;outc aModulatorRed, aModulatorGreen, aModulatorBlue
 
 endin
