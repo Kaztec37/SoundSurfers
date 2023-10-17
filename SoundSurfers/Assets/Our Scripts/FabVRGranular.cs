@@ -84,16 +84,26 @@ public class FabVRGranular : MonoBehaviour
                 b = (int)(pixelColor.b * 255);
                 Debug.Log("RGB: " + r + ", " + g * 255 + ", " + b);
 
-                if (r < 5 && g < 0.2f && b < 5)
-                {
+                //if (r < 5 && g < 0.2f && b < 5){
+                if ( g < 0.2f ){ // For performance errors 
                     r = 50;
                     g = 0.2f;
                     b = 50;
+                    csound.SetChannel("red", r);
+                    csound.SetChannel("green", g);
+                    csound.SetChannel("blue", b);
+                    //Debug.Log("RGB passed to csound: " + r + ", " + g + ", " + b);
+
+                }else{
+                    csound.SetChannel("red", r);
+                    csound.SetChannel("green", g);
+                    csound.SetChannel("blue", b);
+                    //Debug.Log("RGB passed to csound: " + r + ", " + g+ ", " + b);
                 }
 
-                csound.SetChannel("red", r);
-                csound.SetChannel("green", g);
-                csound.SetChannel("blue", b);
+                // csound.SetChannel("red", r);
+                // csound.SetChannel("green", g);
+                // csound.SetChannel("blue", b);
             }
             else
             {
