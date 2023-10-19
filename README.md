@@ -58,6 +58,6 @@ In the SoundSerfers GitHub™ repository, click on the green Code button. Use th
 The documentation for the Unity™ C# wrapper written by Rory Walsh is available in his GitHub™ repository here https://tinyurl.com/yja6vwhw
 
 ## Data
-The sonifications of the NASA satellite imagery are created in real time using fourier transforms of the images provided in the NASA Space Apps challenge "Immersed in the Sounds of Space" competition resources https://tinyurl.com/3czu6rk9
+The sonifications of the NASA satellite imagery are created in real time using fourier transforms of the images provided in the NASA Space Apps challenge "Immersed in the Sounds of Space" competition resources https://hubblesite.org/
 
 In adition to the original mission statement, this project also contains Mars rover panorama scenes taken from https://tinyurl.com/5698mt42 combined with rover audio taken from https://mars.nasa.gov/mars2020/multimedia/audio/
