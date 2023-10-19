@@ -366,7 +366,7 @@ MonoBehaviour:
     f0
     z
 
-    i"FabBryanSynth" 0.5 -1
+    i"FabBryanSynth" 1 -1
 
     </CsScore>
 
@@ -953,7 +953,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e3ecc91cae835544c8cbeb5b2037c6c5, type: 2}
+  - {fileID: 2100000, guid: 505efb7c1d6203646aa0b78660cfd638, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
