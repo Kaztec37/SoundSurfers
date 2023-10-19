@@ -60,4 +60,4 @@ The documentation for the Unity™ C# wrapper written by Rory Walsh is available
 ## Data
 The sonifications of the NASA satellite imagery are created in real time using fourier transforms of the images provided in the NASA Space Apps challenge "Immersed in the Sounds of Space" competition resources https://tinyurl.com/3czu6rk9
 
-In adition to the oriinal mission statement, this project also contains Mars rover panorama scenes taken from https://tinyurl.com/5698mt42 with audio taken from https://mars.nasa.gov/mars2020/multimedia/audio/
+In adition to the original mission statement, this project also contains Mars rover panorama scenes taken from https://tinyurl.com/5698mt42 combined with rover audio taken from https://mars.nasa.gov/mars2020/multimedia/audio/
