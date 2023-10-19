@@ -6,17 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Current Build Scenes/AinesProvingGrounds.unity
+    path: Assets/Scenes/AinesProvingGrounds.unity
     guid: e3ab316b266df4545ba6fb22582ef7cc
   - enabled: 1
-    path: Assets/Scenes/Current Build Scenes/Earths Magnetic Field Sonification.unity
+    path: Assets/Scenes/Earths Magnetic Field Sonification.unity
     guid: b857eb3de7241684e98af7cb513c073e
   - enabled: 1
-    path: Assets/Scenes/Current Build Scenes/D - Orion Scene0.unity
-    guid: b8c8dd3eab051eb4683925b867d4ea85
+    path: Assets/Scenes/GranularSynthSoundification.unity
+    guid: 36169ef65de477742a317ddd4fdacf43
   - enabled: 1
-    path: Assets/Scenes/Current Build Scenes/EoghanFabAudioScene.unity
-    guid: 2923351e8029019439035b228827b15d
+    path: Assets/Scenes/FrequencyModSoundification.unity
+    guid: 1944a9642078fad47943b7b16189dbc9
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: fcae00793ab29d645a9dc7750bf8d55f,
       type: 2}
