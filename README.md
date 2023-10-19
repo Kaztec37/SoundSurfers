@@ -62,4 +62,4 @@ The sonifications of the NASA satellite imagery are created in real time using f
 
 In adition to the original mission statement, this project also contains Mars rover panorama scenes taken from https://tinyurl.com/5698mt42 combined with rover audio taken from https://mars.nasa.gov/mars2020/multimedia/audio/
 
-The project also contains a sonification of the Eath's magnetic field using free prefab from the Unity Assest Store at https://tinyurl.com/5n6wze73 using the EASA sonification from https://tinyurl.com/2dt3skzc
+The project also contains a sonification of the Eath's magnetic field using free prefabs from the Unity™ Assest Store at https://tinyurl.com/5n6wze73 and the EASA sonification from https://tinyurl.com/2dt3skzc
